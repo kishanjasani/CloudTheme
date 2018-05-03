@@ -197,14 +197,85 @@
       </div>
     </div>
   </section>
+
+  <!-- Section -PodCast-->
+  <section class="section section-podcast white-text purple lighten-4">
+    <div class="primary-overlay valign-wrapper">
+      <div class="container">
+        <div class="row">
+          <div class="col s12 m8">
+            <h4 class="white-text darken-2">Listen to cloud theme podcast</h4>
+            <p class="grey-text darken-4">Every frieday 4pm.</p>
+          </div>
+          <div class="col s12 m4">
+            <a href="#" class="btn btn-large purple">
+              <i class="fa fa-podcast"></i>Listen
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--Section: Testimonial-->
+
+  <section class="section section-testimonial grey lighten-4">
+    <div class="container">
+      <div class="row">
+        <div class="col s12">
+          <div class="carousel carousel-slider center">
+            <div class="carousel-item" href="#one!">
+              <h4>Testomonial 1</h4>
+              <p class="flow-text">
+                "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem assumenda laudantium corporis animi doloribus corrupti quas
+                culpa quod. Magni, amet!"
+                <em> - Kishan Jasani</em>
+              </p>
+              <div class="carousel-fixed-item center hide-on-small-and-down">
+                <a href="#" class="btn grey">Read More</a>
+              </div>
+            </div>
+            <div class="carousel-item" href="#two!">
+              <h4>Testomonial 2</h4>
+              <p class="flow-text">
+                "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem assumenda laudantium corporis animi doloribus corrupti quas
+                culpa quod. Magni, amet!"
+                <em> - Mohit Kaklotar</em>
+              </p>
+              <div class="carousel-fixed-item center hide-on-small-and-down">
+                <a href="#" class="btn grey">Read More</a>
+              </div>
+            </div>
+            <div class="carousel-item" href="#three!">
+              <h4>Testomonial 3</h4>
+              <p class="flow-text">
+                "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem assumenda laudantium corporis animi doloribus corrupti quas
+                culpa quod. Magni, amet!"
+                <em> - Chetan Shingala</em>
+              </p>
+              <div class="carousel-fixed-item center hide-on-small-and-down">
+                <a href="#" class="btn grey">Read More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!--Import jQuery before materialize.js-->
   <script type=" text/javascript " src="https://code.jquery.com/jquery-3.2.1.min.js "></script>
   <script type="text/javascript " src="js/materialize.min.js "></script>
   <script>
     $(document).ready(function () {
       // Custom JS & jQuery here
-
+      $('.button-collapse').sideNav();
+      $('.carousel').carousel({
+        fullWidth: true
+      });
     });
+
+
   </script>
 </body>
 
