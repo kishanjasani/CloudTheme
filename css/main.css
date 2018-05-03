@@ -6,6 +6,14 @@
   color: #fff;
 }
 
+.main-header-inner {
+  background: url(../img/background.jpg);
+  background-size: cover;
+  background-position: center;
+  min-height: 350px;
+  color: #fff;
+}
+
 .section-developers .primary-overlay {
   background: rgba(112, 81, 176, 0.7);
   height: 100%;
@@ -17,6 +25,14 @@
 }
 .main-header .showcase {
   padding-top: 100px;
+}
+
+.main-header-inner .showcase {
+  padding-top: 60px;
+}
+
+.tabs .indicator {
+  background-color: #6a1b9a;
 }
 
 .active-link {
