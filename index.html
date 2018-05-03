@@ -36,7 +36,7 @@
               <a href="signup.html">Sign Up</a>
             </li>
             <li>
-              <a href="#" class="btn purple">Login</a>
+              <a href="#login-modal" class="btn purple modal-trigger">Login</a>
             </li>
             <li>
               <a href="https://facebook.com">
@@ -75,7 +75,7 @@
               <div class="divider"></div>
             </li>
             <li>
-              <a href="#" class="btn purple">Login</a>
+              <a href="#login-modal" class="btn purple modal-trigger">Login</a>
             </li>
           </ul>
         </div>
@@ -199,7 +199,7 @@
   </section>
 
   <!-- Section -PodCast-->
-  <section class="section section-podcast white-text purple lighten-4">
+  <section class="section section-podcast white-text deep-purple lighten-1">
     <div class="primary-overlay valign-wrapper">
       <div class="container">
         <div class="row">
@@ -229,7 +229,9 @@
               <p class="flow-text">
                 "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem assumenda laudantium corporis animi doloribus corrupti quas
                 culpa quod. Magni, amet!"
-                <em> - Kishan Jasani</em>
+                <p>
+                  <em> - Kishan Jasani</em>
+                </p>
               </p>
               <div class="carousel-fixed-item center hide-on-small-and-down">
                 <a href="#" class="btn grey">Read More</a>
@@ -240,7 +242,9 @@
               <p class="flow-text">
                 "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem assumenda laudantium corporis animi doloribus corrupti quas
                 culpa quod. Magni, amet!"
-                <em> - Mohit Kaklotar</em>
+                <p>
+                  <em> - Mohit Kaklotar</em>
+                </p>
               </p>
               <div class="carousel-fixed-item center hide-on-small-and-down">
                 <a href="#" class="btn grey">Read More</a>
@@ -251,7 +255,9 @@
               <p class="flow-text">
                 "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem assumenda laudantium corporis animi doloribus corrupti quas
                 culpa quod. Magni, amet!"
-                <em> - Chetan Shingala</em>
+                <p>
+                  <em> - Chetan Shingala</em>
+                </p>
               </p>
               <div class="carousel-fixed-item center hide-on-small-and-down">
                 <a href="#" class="btn grey">Read More</a>
@@ -263,6 +269,65 @@
     </div>
   </section>
 
+  <!-- Footer-->
+
+  <footer class="page-footer deep-purple">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">About Us</h5>
+          <p class="grey-text text-lighten-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit delectus dolorem consectetur architecto
+            eligendi. Itaque at dolorem minus. Laborum, ut.</p>
+        </div>
+        <div class="col l4 offset-l2 s12">
+          <h5 class="white-text">Links</h5>
+          <ul>
+            <li>
+              <a class="grey-text text-lighten-3" href="index.html">Home</a>
+            </li>
+            <li>
+              <a class="grey-text text-lighten-3" href="solution.html">Solution</a>
+            </li>
+            <li>
+              <a class="grey-text text-lighten-3" href="signup.html">SignUp</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright deep-purple darken-1">
+      <div class="container">
+        Cloud Theme &copy; 2018
+        <a class="grey-text text-lighten-4 right" href="#!">Term & Condition</a>
+      </div>
+    </div>
+  </footer>
+
+  <!--Login Modal -->
+
+  <div id="login-modal" class="modal">
+    <div class="modal-content">
+      <h4>Account Login</h4>
+      <p>Login to access your dashboard</p>
+      <form>
+        <div class="input-field">
+          <input type="email" id="email">
+          <label for="email">Email</label>
+        </div>
+        <div class="input-field">
+          <input type="password" id="password">
+          <label for="password">Password</label>
+        </div>
+      </form>
+    </div>
+    <div class="modal-footer">
+      <a href="#" class="btn grey modal-action modal-close">
+        <i class="fa fa-sync"></i>&nbsp;&nbsp; Forget password</a>
+      <a href="#" class="btn purple modal-action modal-close">
+        <i class="fa fa-lock"></i>&nbsp; Login</a>
+    </div>
+  </div>
+
   <!--Import jQuery before materialize.js-->
   <script type=" text/javascript " src="https://code.jquery.com/jquery-3.2.1.min.js "></script>
   <script type="text/javascript " src="js/materialize.min.js "></script>
@@ -273,9 +338,9 @@
       $('.carousel').carousel({
         fullWidth: true
       });
+      $('.modal').modal();
+
     });
-
-
   </script>
 </body>
 
