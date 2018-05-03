@@ -6,6 +6,15 @@
   color: #fff;
 }
 
+.primary-overlay {
+  background: rgba(112, 81, 176, 0.7);
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+}
 .main-header .showcase {
   padding-top: 100px;
 }
@@ -13,4 +22,14 @@
 .active-link {
   color: #d847f1;
   font-weight: bold;
+}
+
+.section-developers {
+  position: relative;
+  background: url(../img/code.jpg);
+  background-position: center;
+  background-size: cover;
+  border-top: #333 solid 5px;
+  min-height: 180px;
+  border-bottom: #333 solid 5px;
 }
